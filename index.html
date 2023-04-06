@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktek RevoU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="title">        
+        <b>Welcome to catik</b>
+        <p>Hai sobat, selamat datang di catik :] <br>
+            sebuah web apps sederhana yang berfungsi untuk menghitung luas dan keliling bangun datar</p>
+        </div>
+        <div class="bentuk">
+            Segitiga
+        </div>
+        <div class="bentuk1">
+            Jajar genjang
+        </div>
+        <div class="container">
+            <div class="luas">
+                Luas Segitiga
+            </div>
+            <img src="https://th.bing.com/th/id/OIP.7c2fXZq-e4-OZKtr2jyJpgAAAA?pid=ImgDet&rs=1" class="image">
+            <div>
+                <p > Rumus luas segitiga yaitu :</p><br>
+                    <div class="text">
+                        <b> L = 1/2 x A x T</b><br>
+                    </div>
+                <p>Dimana : <br>
+                    L : Luas <br>
+                    A : Alas <br>
+                    T : Tinggi </p>
+            </div>
+                <div class="form">
+                    <div class="text">
+                        <b>HITUNG LUAS SEGITIGA</b>
+                    </div>
+                    <div>
+                            <label for="Falas" >Alas :</label><br>
+                            <input type="text" id="Falas" name="Falas"><br>
+                            <label for="Ftinggi">Tinggi :</label><br>
+                            <input type="text" id="Ftinggi" name="Ftinggi"><br>  
+                            <p>Luas = <span id="luas"></span></p>
+                            <button onclick="hitung_luas()" class="button">Hitung</button>
+                            <button onclick="reset_luas()" class="button">reset</button>
+                            <script src="index.js"></script>
+                    </div>
+                </div>
+     </div>
+     <div>
+        <div class="container">
+            <div class="luas">
+                Keliling Segitiga
+            </div>
+            <img src="https://th.bing.com/th/id/OIP.7c2fXZq-e4-OZKtr2jyJpgAAAA?pid=ImgDet&rs=1" class="image">
+            <div>
+                <p > Rumus keliling segitiga yaitu :</p><br>
+                    <div class="text">
+                        <b > k = S1 + S2 + S3</b><br>
+                    </div>
+                <p>Dimana : <br>
+                    Keliling <br>
+                    S1 : Sisi A <br>
+                    S2 : Sisi B <br>
+                    S3 : Sisi C </p>
+            </div>
+                <div class="form">
+                    <div class="text">
+                        <b  >HITUNG KELILING SEGITIGA</b>
+                    </div>
+                    <div>
+                            <label for="sisi1" >Sisi 1 :</label><br>
+                            <input type="text" id="sisi1" name="sisi1"><br>
+                            <label for="sisi2" >Sisi 2 :</label><br>
+                            <input type="text" id="sisi2" name="sisi2"><br>
+                            <label for="sisi3">Sisi 3 :</label><br>
+                            <input type="text" id="sisi3" name="sisi3"><br>  
+                            <p>KELILING = <span id="keliling"></span></p>
+                            <button onclick="hitung_keliling()" class="button">Hitung</button>
+                            <button onclick="reset_keliling()" class="button">reset</button>
+                            <script src="index.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="bentuk1">
+                Segitiga
+            </div>
+            <div class="bentuk">
+                Jajar genjang
+            </div>
+                <div class="luas">
+                    Luas Jajar genjang
+                </div>
+                <img src="https://familinia.com/wp-content/uploads/2020/06/Rumus-Jajar-Genjang.png" class="image">
+                <div>
+                    <p > Rumus luas Jajar genjang yaitu :</p><br>
+                        <div class="text">
+                            <b> L = A x T</b><br>
+                        </div>
+                    <p>Dimana : <br>
+                        L : Luas <br>
+                        A : Alas <br>
+                        T : Tinggi </p>
+                </div>
+                <div class="form">
+                    <div class="text">
+                        <b  >HITUNG LUAS JAJAR GENJANG</b>
+                    </div>
+                    <div>
+                            <label for="alasjg" >Alas :</label><br>
+                            <input type="text" id="alasjg" name="alas"><br>
+                            <label for="tinggijg">Tinggi :</label><br>
+                            <input type="text" id="tinggijg" name="tinggi"><br>  
+                            <p>Luas = <span id="luasjg"></span></p>
+                            <button onclick="hitung_luas_jg()" class="button">Hitung</button>
+                            <button onclick="reset_luas_jg()" class="button">reset</button>
+                            <script src="index.js"></script>
+                    </div>
+                </div>
+        </div>
+        <div class="luas">
+            Luas keliling genjang
+        </div>
+        <img src="https://familinia.com/wp-content/uploads/2020/06/Rumus-Jajar-Genjang.png" class="image">
+        <div>
+            <p > Rumus Keliling Jajar genjang yaitu :</p><br>
+                <div class="text">
+                    <b> K = 2 x (A + T)</b><br>
+                </div>
+            <p>Dimana : <br>
+                K : Keliling <br>
+                A : Alas <br>
+                T : Tinggi </p>
+        </div>
+        <div class="form">
+            <div class="text" >
+                <b  >HITUNG KELILING JAJAR GENJANG</b>
+            </div>
+            <div>
+                <label for="alasj" >Alas :</label><br>
+                <input type="text" id="alasj" name="alas"><br>
+                <label for="tinggij">Tinggi :</label><br>
+                <input type="text" id="tinggij" name="tinggi"><br>  
+                <p>Luas = <span id="kelilingjg"></span></p>
+                <button onclick="hitung_keliling_jg()" class="button">Hitung</button>
+                <button onclick="reset_keliling_jg()" class="button">reset</button>
+                <script src="index.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
